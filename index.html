@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+  <title>GoMyCode</title>
+</head>
+
+<body>
+  <nav class="navbar navbar_inverse">
+
+    <a class="navbar-brand" href="#"><img src="https://gomycode.tn/images/section2GMCLogo.png"
+        style="width:50px;height:50px;"></a>
+    <center> <a href="index.html">Home</a>
+      <a href="courses.html">Courses</a>
+      <a href="contact.html">Contact</a></center>
+    <hr>
+  </nav>
+
+  <center>
+    <h1>courses</h1>
+  </center>
+  <div class="aziz">
+    <center class="center">
+      <div class="course1">
+        <button id="btnCourses1">View more</button>
+      </div>
+    </center>
+
+    <center class="center">
+      <div class="course2">
+        <button id="btnCourses2">View more</button>
+      </div>
+    </center>
+
+    <center class="center">
+      <div class="course3">
+
+        <button id="btnCourses3">View more</button>
+
+      </div>
+
+    </center>
+  </div>
+  <a href="courses.html">
+    <h4>View more...</h4>
+  </a>
+  <hr>
+  <h1>More about GoMyCode</h1>
+  <center><iframe width="853" height="480" src="https://www.youtube.com/embed/MkLog_27S6U" frameborder="0"
+      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+
+  <div id="myModal" class="modal" style="opacity: 1; display: none;">
+    <p>This is a GoMyCode Track. <br>
+      Each track has its own goal. <br>
+      By adopting this track, you chose your own goal.
+    </p>
+  </div>
+</body>
+<script src="main.js"></script>
+<script>
+  $(document).ready(function () {
+    $(".course1").click(function () {
+      $("#myModal").modal();
+    });
+    $(".course2").click(function () {
+      $("#myModal").modal();
+    });
+    $(".course3").click(function () {
+      $("#myModal").modal();
+    });
+
+    $(".course1").hover(function () {
+      $("#btnCourses1").toggle();
+    })
+    $(".course2").hover(function () {
+      $("#btnCourses2").toggle();
+    })
+    $(".course3").hover(function () {
+      $("#btnCourses3").toggle();
+    });
+
+  });
+</script>
+<script src="main.js"></script>
+
+<script src="main.js"></script>
+
+</html>
